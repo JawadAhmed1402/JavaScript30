@@ -34,17 +34,17 @@
 **script.js** – Listens for key events and plays corresponding sounds   
 
 ## 🎵 Sample Code (JS)
-window.addEventListener("keydown", function (e) {
-  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+```window.addEventListener("keydown", function (e) {   
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);   
+  const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);   
   
-  if (!audio) return; // Stop function if key is not assigned
+  if (!audio) return; // Stop function if key is not assigned   
 
-  audio.currentTime = 0; // Rewind sound to start
-  audio.play();
-  key.classList.add("playing");
+  audio.currentTime = 0; // Rewind sound to start    
+  audio.play();    
+  key.classList.add("playing");     
   
-  setTimeout(() => key.classList.remove("playing"), 100);
-});
+  setTimeout(() => key.classList.remove("playing"), 100);      
+});    
 
 ## 💬 Feel free to connect, share feedback, or collaborate! 🚀
