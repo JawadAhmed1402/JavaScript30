@@ -56,37 +56,37 @@ A hands-on coding challenge to improve JavaScript skills by building 30 differen
    cd JavaScript30
 
 ## 🛠️ Technologies Used
-• JavaScript (ES6+)
-• HTML5 & CSS3
-• Fetch API
-• Web Speech API
-• Local Storage
+• JavaScript (ES6+)   
+• HTML5 & CSS3   
+• Fetch API   
+• Web Speech API   
+• Local Storage   
 
 ## 🎯 My Goals
-✅ Strengthen my JavaScript fundamentals
-✅ Improve DOM manipulation skills
-✅ Work with APIs & browser storage
-✅ Build interactive projects from scratch
+✅ Strengthen my JavaScript fundamentals   
+✅ Improve DOM manipulation skills   
+✅ Work with APIs & browser storage   
+✅ Build interactive projects from scratch   
 
 ## 🔗 Resources
 ## 📘 Official Course
 • [JavaScript 30 by Wes Bos](https://javascript30.com/) – The official course page with video tutorials.
   
 ## 📖 JavaScript Documentation
-• [MDN JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – The best reference for JavaScript.
-• [JavaScript.info](https://javascript.info/) – An in-depth modern JavaScript guide.
+• [MDN JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – The best reference for JavaScript.   
+• [JavaScript.info](https://javascript.info/) – An in-depth modern JavaScript guide.   
 
 ## 🔥 Useful Tools
-• [Can I Use](https://caniuse.com/) – Check browser compatibility for JavaScript features.
-• [ES6+ Features](https://es6-features.org/) – Learn modern JavaScript syntax.
-• [JSON Formatter](https://jsonformatter.org/) – Format and validate JSON data.
+• [Can I Use](https://caniuse.com/) – Check browser compatibility for JavaScript features.   
+• [ES6+ Features](https://es6-features.org/) – Learn modern JavaScript syntax.    
+• [JSON Formatter](https://jsonformatter.org/) – Format and validate JSON data.    
 
 ## 🎨 Developer Tools
-• [Chrome DevTools] – Debug JavaScript and inspect elements in real-time.
-• [VS Code](https://code.visualstudio.com/) – A great code editor for JavaScript development.
+• [Chrome DevTools] – Debug JavaScript and inspect elements in real-time.   
+• [VS Code](https://code.visualstudio.com/) – A great code editor for JavaScript development.   
 
 ## 🌟 Let's Connect!
-If you're also taking the challenge or have suggestions, feel free to connect! 🚀
+If you're also taking the challenge or have suggestions, feel free to connect! 🚀    
 
 ## 🌍 Connect with Me  
 
