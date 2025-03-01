@@ -29,7 +29,8 @@
    ```sh
       git clone https://github.com/JawadAhmed/2)-JS-and-CSS-Clock.git     
 2. **Navigate into the project folder**
-   ```cd 2)-JS-and-CSS-Clock.git   
+   ```
+     cd 2)-JS-and-CSS-Clock.git   
 
 ## 📝 Code Overview
 **• index.html** – Defines the clock face and hands   
@@ -37,7 +38,7 @@
 **• script.js** – Calculates and updates the hand positions every second     
 
 ## 🕰️ Sample Code (JS)
-     ```function setClock() {
+    ```function setClock() {
      const now = new Date();
      const seconds = now.getSeconds();
      const minutes = now.getMinutes();
@@ -51,7 +52,6 @@
      document.querySelector(".minute-hand").style.transform = `rotate(${minuteDeg}deg)`;
      document.querySelector(".hour-hand").style.transform = `rotate(${hourDeg}deg)`;
   }
-
   setInterval(setClock, 1000);
   setClock(); // Initialize clock immediately
 
