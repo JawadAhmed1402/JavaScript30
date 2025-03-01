@@ -29,9 +29,9 @@
    git clone https://github.com/yourgithubusername/Drum-Kit.git
 
 ## 📝 Code Overview
-**index.html** – Defines the drum buttons with assigned keys   
-**style.css** – Adds styles and animations for keypress effects   
-**script.js** – Listens for key events and plays corresponding sounds   
+**• index.html** – Defines the drum buttons with assigned keys   
+**• style.css** – Adds styles and animations for keypress effects   
+**• script.js** – Listens for key events and plays corresponding sounds   
 
 ## 🎵 Sample Code (JS)
    ```window.addEventListener("keydown", function (e) {   
