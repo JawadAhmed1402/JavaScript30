@@ -26,7 +26,7 @@
 ## 📂 Project Setup  
 1. **Clone this repository**  
    ```sh
-   git clone https://github.com/yourgithubusername/Drum-Kit.git
+   git clone https://github.com/JawadAhmed1402/1)-JavaScript-Drum-Kit.git
 
 ## 📝 Code Overview
 **• index.html** – Defines the drum buttons with assigned keys   
