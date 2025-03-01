@@ -49,7 +49,7 @@ A hands-on coding challenge to improve JavaScript skills by building 30 differen
 ## 📂 How to Use  
 1. Clone this repository:  
    ```sh
-   git clone https://github.com/JawadAhmed1402/30DaysOfJavaScript.git
+   git clone https://github.com/JawadAhmed1402/JavaScript30.git
    
 2. Navigate into the project folder:
    ```sh
@@ -82,7 +82,7 @@ A hands-on coding challenge to improve JavaScript skills by building 30 differen
 • [JSON Formatter](https://jsonformatter.org/) – Format and validate JSON data.    
 
 ## 🎨 Developer Tools
-• [Chrome DevTools] – Debug JavaScript and inspect elements in real-time.   
+• [Chrome DevTools]() – Debug JavaScript and inspect elements in real-time.   
 • [VS Code](https://code.visualstudio.com/) – A great code editor for JavaScript development.   
 
 ## 🌟 Let's Connect!
