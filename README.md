@@ -27,7 +27,7 @@
 ## 📂 Project Setup  
 1. **Clone this repository**  
    ```sh
-   git clone https://github.com/JawadAhmed/2)-JS-and-CSS-Clock.git     
+      git clone https://github.com/JawadAhmed/2)-JS-and-CSS-Clock.git     
 2. **Navigate into the project folder**
    ```cd 2)-JS-and-CSS-Clock.git   
 
@@ -37,7 +37,7 @@
 **• script.js** – Calculates and updates the hand positions every second     
 
 ## 🕰️ Sample Code (JS)
-  ```function setClock() {
+     ```function setClock() {
      const now = new Date();
      const seconds = now.getSeconds();
      const minutes = now.getMinutes();
