@@ -40,18 +40,18 @@
 ## 🕰️ Sample Code (JS)
    ```sh
       function setClock() {
-      const now = new Date();
-      const seconds = now.getSeconds();
-      const minutes = now.getMinutes();
-      const hours = now.getHours();
+         const now = new Date();
+         const seconds = now.getSeconds();
+         const minutes = now.getMinutes();
+         const hours = now.getHours();
 
-      const secondDeg = ((seconds / 60) * 360) + 90;
-      const minuteDeg = ((minutes / 60) * 360) + 90;
-      const hourDeg = ((hours / 12) * 360) + 90;
+         const secondDeg = ((seconds / 60) * 360) + 90;
+         const minuteDeg = ((minutes / 60) * 360) + 90;
+         const hourDeg = ((hours / 12) * 360) + 90;
 
-      document.querySelector(".second-hand").style.transform = `rotate(${secondDeg}deg)`;
-      document.querySelector(".minute-hand").style.transform = `rotate(${minuteDeg}deg)`;
-      document.querySelector(".hour-hand").style.transform = `rotate(${hourDeg}deg)`;
+         document.querySelector(".second-hand").style.transform = `rotate(${secondDeg}deg)`;
+         document.querySelector(".minute-hand").style.transform = `rotate(${minuteDeg}deg)`;
+         document.querySelector(".hour-hand").style.transform = `rotate(${hourDeg}deg)`;
       }
      setInterval(setClock, 1000);
      setClock(); // Initialize clock immediately
