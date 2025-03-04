@@ -48,20 +48,20 @@
 ## 📝 Sample Code (JS) 
 
     ```sh
-   const endpoint = 'https://gist.githubusercontent.com/jshawl/17f1bfb09e342437f7a046df64b02b1e/raw/us-cities.json';
-   const cities = [];
-   fetch(endpoint)
-     .then(response => response.json())
-     .then(data => cities.push(...data));
-   function findMatches(wordToMatch, cities) {
-     return cities.filter(place => {
-       const regex = new RegExp(wordToMatch, 'gi'); 
-       return place.city.match(regex) || place.state.match(regex);
-      });        
-   }     
-   const searchInput = document.querySelector('.search');       
-   const suggestions = document.querySelector('.suggestions');       
-   searchInput.addEventListener('input', displayMatches);
+      const endpoint = 'https://gist.githubusercontent.com/jshawl/17f1bfb09e342437f7a046df64b02b1e/raw/us-cities.json';
+      const cities = [];
+      fetch(endpoint)
+        .then(response => response.json())
+        .then(data => cities.push(...data));
+      function findMatches(wordToMatch, cities) {
+          return cities.filter(place => {
+          const regex = new RegExp(wordToMatch, 'gi'); 
+          return place.city.match(regex) || place.state.match(regex);
+         });        
+      }     
+      const searchInput = document.querySelector('.search');       
+      const suggestions = document.querySelector('.suggestions');       
+      searchInput.addEventListener('input', displayMatches);
 
 ## 👨‍💻 Contributing
 
