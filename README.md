@@ -1,100 +1,79 @@
-# 30 Days of JavaScript - Wes Bos  
+# 🔍 Type Ahead (Live Search)  
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)  
+![HTML5](https://img.shields.io/badge/HTML5-orange?style=for-the-badge&logo=html5)  
+![CSS3](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3)  
 
-A hands-on coding challenge to improve JavaScript skills by building 30 different projects over 30 days. This course by [Wes Bos](https://javascript30.com/) covers essential JavaScript concepts with practical, real-world applications.  
+🔎 **Type Ahead** is a **real-time search suggestion tool** that dynamically filters and displays **matching results** as you type. It uses **fetch API** to retrieve a dataset of cities and states, and highlights matched text in search results.  
 
-## 🚀 Course Overview  
-- Pure JavaScript (No frameworks or libraries)  
-- DOM Manipulation & Events  
-- Array & Object Methods  
-- Fetch API & Local Storage  
-- CSS & JavaScript Integration  
-- Interactive & Fun Projects  
+---
 
-## 📌 Project List  
-| Day | Project | Description |
-|----|---------|------------|
-| 01 | **Drum Kit** | Play sounds using keyboard keys |
-| 02 | **Clock** | Real-time analog clock |
-| 03 | **CSS Variables** | Dynamically update CSS styles using JavaScript |
-| 04 | **Array Cardio Part 1** | Practice advanced JavaScript array methods |
-| 05 | **Flex Panel Gallery** | Expandable image gallery using Flexbox |
-| 06 | **Type Ahead** | Search autocomplete using Fetch API |
-| 07 | **Array Cardio Part 2** | More JavaScript array method practice |
-| 08 | **Fun with HTML5 Canvas** | Interactive drawing using Canvas API |
-| 09 | **Dev Tools Tricks** | Explore Chrome DevTools features |
-| 10 | **Hold Shift to Check Multiple Checkboxes** | Enhance checkbox selection with Shift key |
-| 11 | **Custom Video Player** | Create a custom video player using JavaScript |
-| 12 | **Key Sequence Detection (Konami Code)** | Detect secret key sequences |
-| 13 | **Slide in on Scroll** | Reveal elements when scrolling |
-| 14 | **JavaScript Reference vs Copy** | Understand reference vs primitive values |
-| 15 | **Local Storage & Event Delegation** | Store data and manage events efficiently |
-| 16 | **Mouse Move Effects** | Interactive page animations |
-| 17 | **Sort Without Articles** | Sort list items while ignoring certain words |
-| 18 | **Adding Up Times with Reduce** | Use `.reduce()` to sum up time durations |
-| 19 | **Webcam Fun** | Play with live webcam filters |
-| 20 | **Speech Recognition** | Convert speech to text |
-| 21 | **Geolocation & Speedometer** | Track real-time geolocation data |
-| 22 | **Follow Along Links** | Create a cool hover effect for links |
-| 23 | **Speech Synthesis** | Make the browser speak using JavaScript |
-| 24 | **Sticky Navigation** | Create a sticky navbar when scrolling |
-| 25 | **Event Capture, Propagation & Bubbling** | Learn advanced event handling |
-| 26 | **Stripe Follow Along Dropdown** | Build interactive dropdown menus |
-| 27 | **Click and Drag** | Implement a draggable scrolling UI |
-| 28 | **Video Speed Controller** | Adjust video speed with a slider |
-| 29 | **Countdown Timer** | Create a custom countdown timer |
-| 30 | **Whack A Mole Game** | Build a fun game using JavaScript |
+## 📌 Features  
+✅ **Instant search suggestions** as the user types  
+✅ **Fetch API** to retrieve a dataset dynamically  
+✅ **Highlight matching text** in search results  
+✅ **Efficient filtering using JavaScript's `.filter()` and `.map()` methods**  
+✅ **Smooth UI updates** with event listeners  
 
-## 📂 How to Use  
-1. Clone this repository:  
+---
+
+## 🛠️ Tech Stack  
+
+🔹 **JavaScript (ES6+)** – Fetch API, event listeners, string manipulation  
+🔹 **HTML5** – Structuring the UI  
+🔹 **CSS3** – Styling & highlight effects  
+
+---
+
+## 🎯 How It Works  
+1. **Fetch Data**: A dataset of **cities & states** is fetched from an external source.  
+2. **Filter Data**: As the user types, the input is matched against city/state names.  
+3. **Highlight Matches**: Matching parts of the text are highlighted.  
+4. **Display Results**: The UI updates dynamically with matching entries.  
+
+---
+
+## 📂 Project Setup  
+
+1. **Clone this repository**  
    ```sh
-   git clone https://github.com/JawadAhmed1402/JavaScript30.git
+   git clone https://github.com/JawadAhmed1402/6)-Type-Ahead.git
+      
+2. **Navigate into the project folder**      
+   ```sh
+   cd 6)-Type-Ahead      
    
-2. Navigate into the project folder:
-   ```sh
-   cd JavaScript30
+3. Open **index.html** in your browser or use Live Server       
 
-## 🛠️ Technologies Used
-• JavaScript (ES6+)   
-• HTML5 & CSS3   
-• Fetch API   
-• Web Speech API   
-• Local Storage   
+## 📝 Sample Code (JS) 
 
-## 🎯 My Goals
-✅ Strengthen my JavaScript fundamentals   
-✅ Improve DOM manipulation skills   
-✅ Work with APIs & browser storage   
-✅ Build interactive projects from scratch   
+    ```sh
+   const endpoint = 'https://gist.githubusercontent.com/jshawl/17f1bfb09e342437f7a046df64b02b1e/raw/us-cities.json';
+   const cities = [];
+   fetch(endpoint)
+     .then(response => response.json())
+     .then(data => cities.push(...data));
+   function findMatches(wordToMatch, cities) {
+     return cities.filter(place => {
+       const regex = new RegExp(wordToMatch, 'gi'); 
+       return place.city.match(regex) || place.state.match(regex);
+      });        
+   }     
+   const searchInput = document.querySelector('.search');       
+   const suggestions = document.querySelector('.suggestions');       
+   searchInput.addEventListener('input', displayMatches);
 
-## 🔗 Resources
-## 📘 Official Course
-• [JavaScript 30 by Wes Bos](https://javascript30.com/) – The official course page with video tutorials.
-  
-## 📖 JavaScript Documentation
-• [MDN JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – The best reference for JavaScript.   
-• [JavaScript.info](https://javascript.info/) – An in-depth modern JavaScript guide.   
+## 👨‍💻 Contributing
 
-## 🔥 Useful Tools
-• [Can I Use](https://caniuse.com/) – Check browser compatibility for JavaScript features.   
-• [ES6+ Features](https://es6-features.org/) – Learn modern JavaScript syntax.    
-• [JSON Formatter](https://jsonformatter.org/) – Format and validate JSON data.    
+Contributions are **welcome!** 🚀
+Feel free to **open an issue** or **submit a pull request** to improve this project.
 
-## 🎨 Developer Tools
-• [Chrome DevTools]() – Debug JavaScript and inspect elements in real-time.   
-• [VS Code](https://code.visualstudio.com/) – A great code editor for JavaScript development.   
+## 🧑‍💻 Author
 
-## 🌟 Let's Connect!
-If you're also taking the challenge or have suggestions, feel free to connect! 🚀    
+👤 Jawad Ahmed
+🔗 [GitHub Profile](https://github.com/JawadAhmed1402/)
 
-## 🌍 Connect with Me  
+## 📬 Connect with Me
 
-Let's connect and share our JavaScript journey! Feel free to reach out:  
 
-[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/JawadAhmed1402)   
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/jawad-ahmed-1261912a8)  
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/jawa.d1438)  
-
-💬 **Feel free to connect, collaborate, or just say hi! 🚀**
-
+## 💬 Feel free to connect, share feedback, or collaborate! 🚀
