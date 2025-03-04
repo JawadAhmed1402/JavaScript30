@@ -65,15 +65,15 @@
 
 ## 👨‍💻 Contributing
 
-Contributions are **welcome!** 🚀
-Feel free to **open an issue** or **submit a pull request** to improve this project.
+Contributions are **welcome!** 🚀        
+Feel free to **open an issue** or **submit a pull request** to improve this project.         
 
 ## 🧑‍💻 Author
 
-👤 Jawad Ahmed
-🔗 [GitHub Profile](https://github.com/JawadAhmed1402/)
+👤 Jawad Ahmed      
+🔗 [GitHub Profile](https://github.com/JawadAhmed1402/)        
 
-## 📬 Connect with Me
+## 📬 Connect with Me       
 
 
 ## 💬 Feel free to connect, share feedback, or collaborate! 🚀
